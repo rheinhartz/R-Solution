@@ -1,0 +1,61 @@
+html {
+/*
+        background-color: #ddd;
+        background-image: -moz-linear-gradient(center top, #fff, #aaa);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #aaa));
+        background-image: linear-gradient(top, #fff, #aaa);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#ffffff', EndColorStr = '#aaaaaa');
+        background-repeat: no-repeat;
+        height: 100%;
+
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+*/
+    background-color: #ddd;
+}
+
+a.linkbutton {
+    display: inline-block;
+    background-color: #557fbe;
+    border-color: #addbe6;
+
+    text-align: center;
+    color: #ffffff;
+    font-size:10px;
+    font-weight:900;
+    font-style:normal;
+    font-family:"Tahoma";
+
+    border: 2px outset;
+    border-radius: 15px;
+    padding: 1px 10px 5px 10px;
+
+    width: 50px;
+
+    text-decoration: none;
+}
+
+a.linkbutton:hover {
+    background-color: #557fbe;
+    border-color: #addbe6;
+}
+
+a.linkbutton:active {
+    background-color: #E7005b;
+    border-color: #aaaaaa;
+
+}
+
+.td1{
+    font-size:12px;
+    font-style:normal;
+    font-family:"Arial";
+    text-align:left;
+}
+
+.rflashmessage{
+    display: inline-block;
+    text-align: center;
+    color:red;
+}

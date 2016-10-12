@@ -1,0 +1,454 @@
+/*-----------------------------------------------------------------------
+Main Layout Start
+-----------------------------------------------------------------------*/
+
+html {
+    background-color: #ddd;
+    background-image: -moz-linear-gradient(center top, #aaa, #ddd);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
+    background-image: linear-gradient(top, #aaa, #ddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
+    background-repeat: no-repeat;
+    height: 100%;
+    /* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    background-attachment: fixed;
+
+    font-family: "verdana";
+}
+
+html.no-cssgradients {
+    background-color: #aaa;
+}
+
+.ie6 html {
+    height: 100%;
+}
+
+html * {
+    margin: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #333333;
+    margin: 0 auto;
+    border-radius: 0px 0px 20px 20px;
+    max-width: 1024px;
+    min-width: 1024px;
+    /*overflow-x: hidden;  prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
+    -moz-box-shadow: 0 0 0.3em #255b17;
+    -webkit-box-shadow: 0 0 0.3em #255b17;
+    box-shadow: 0 0 1em #255b17;
+}
+
+
+/* replace with .no-boxshadow body if you have modernizr available */
+.ie6 body,
+.ie7 body,
+.ie8 body {
+    border-color: #255b17;
+    border-style: solid;
+    border-width: 0 1px;
+}
+
+.ie6 body {
+    height: 100%;
+}
+
+.main_nav{
+    position:fixed;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width: 1024px;
+    height: 30px;
+    padding-top: 10px;
+    background-color: #000000;
+    /*border-radius: 0px 0px 10px 10px;*/
+
+    overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
+    -moz-box-shadow: 0 0 0.3em #255b17;
+    -webkit-box-shadow: 0 0 0.3em #255b17;
+
+    z-index: 100;
+}
+
+.header {
+    background: #CD5C5C;
+    color: #000;
+    clear: both;
+    font-size: 0.8em;
+    margin-top: 0;
+    padding: 1em;
+    min-height: 1.8em;
+}
+
+.footer {
+    background: #557DBE;
+    color: #000;
+    clear: both;
+    font-size: 0.8em;
+    margin-top: 0;
+    padding: 1em;
+    min-height: 1em;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.content {
+}
+
+.content h1 {
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0.8em 1em 0.3em;
+    padding: 0 0.25em;
+}
+
+
+.spinner {
+    background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
+    height: 16px;
+    width: 16px;
+    padding: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-indent: -9999px;
+}
+
+
+.center_container{
+    position: relative;
+    width: 1024px;
+    height: 1000px;
+    background-color: #ffffff;
+    z-index: 0;
+}
+
+.container{
+    position: relative;
+    width: 1024px;
+    height: 1000px;
+    background-color: #b3b3b3;
+    z-index: 0;
+}
+.left_div{
+    position: absolute;
+    left: 0;
+    float: left;
+
+    background-color:#ffffff;
+    width:200px;
+    height:auto;
+    z-index: 3;
+    overflow: auto;
+}
+.center_div{
+    position: absolute;
+    left: 202px;
+
+    background-color:#ffffff;
+    width:620px;
+    height:100%;
+    z-index: 2;
+    overflow: auto;
+}
+.right_div{
+    position: absolute;
+    right: 0;
+
+    background-color:#ffffff;
+    width:200px;
+    height:400px;
+    z-index: 1;
+    overflow: auto;
+}
+
+.main_nav_container{
+    position: relative;
+    width: 1024px;
+}
+.main_nav_buttons{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+.main_nav_rlogo{
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+/*-----------------------------------------------------------------------
+Main Layout - End
+-----------------------------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------------------------------------------------
+Left Div  - Start
+-----------------------------------------------------------------------*/
+.profile{
+    display: inline-block;
+    background-color: #557DBE;
+    height: 100px;
+    width: 200px;
+}
+
+.profile_pic{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+    background:url("../images/ProfilePic.jpg") no-repeat scroll 0 0 transparent;
+    
+    height: 60px;
+    width: 60px;
+    
+    border-radius: 2px 2px 2px 10px;
+    -moz-box-shadow: 0 0 0.3em #255b17;
+    -webkit-box-shadow: 0 0 0.3em #255b17;
+}
+
+.profile_stats{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 4px;
+    
+    font-size: 15px;
+    font-weight: bold;
+    
+    height: 60px;
+    width: 110px;
+}
+
+.modules{
+    display: inline-block;
+    margin-left: 3px;
+}
+/* ----------------------------------------------------------------------
+Left Div  - End
+-----------------------------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------------------------------------------------
+Right Div  - Start
+-----------------------------------------------------------------------*/
+.profile_right{
+    display: inline-block;
+    background-color: #CD5C5C;
+    height: 100px;
+    width: 200px;
+}
+
+
+.profile_stats_right{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 4px;
+    
+    font-size: 15px;
+    font-weight: bold;
+    
+    height: 60px;
+    width: 110px;
+}
+
+/* ----------------------------------------------------------------------
+Left Div  - End
+-----------------------------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------------------------------------------------
+Action Nav  - Start
+-----------------------------------------------------------------------*/
+.actionnav{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+}
+
+.actionnav-right{
+    margin-top: 3px;
+    margin-right: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+}
+
+.actionnav-left{
+    margin-left: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+}
+
+.actionnav img,
+.actionnav-left img,
+.actionnav-right img
+{
+    margin-top: 2px;
+    width:20%;
+}
+
+.actioncontent{
+    margin-top: 50px;
+}
+/* ----------------------------------------------------------------------
+Action Nav  - End
+-----------------------------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------------------------------------------------
+Messages  - Start
+-----------------------------------------------------------------------*/
+.message_error,
+.message_flash
+{
+    margin: 2px 2px 2px 2px;
+    padding: 1px 1px 1px 1px;
+    font-size: 12px;
+    color: #CD5C5C;
+    width: 99%;
+}
+
+.message_flash ul,
+.message_error ul
+{
+    padding: 0;
+}
+
+.message_flash li,
+.message_error li
+{
+
+    margin-top: 2px;
+    padding: 1px 1px 1px 1px;
+    list-style: none;
+    text-indent: 27px;
+    /*
+    background-image: -moz-linear-gradient(center left, #fff3f3, transparent);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #fff3f3), color-stop(1, transparent));
+    background-image: linear-gradient(left, #fff3f3, transparent);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#fff3f3', EndColorStr = 'transparent');
+    background-repeat: no-repeat;
+    */
+}
+
+.message_flash li{
+    background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
+}
+
+.message_error li{
+    background: transparent url(../images/skin/exclamation.png) 0.5em 50% no-repeat;
+}
+/* ----------------------------------------------------------------------
+Messages  - End
+-----------------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------------
+Link Buttons  - Start
+-----------------------------------------------------------------------*/
+a{
+    text-decoration: none;
+}
+a.linkbutton {
+    display: inline-block;
+    background-color: #557fbe;
+    border-color: #addbe6;
+
+    text-align: center;
+    color: #ffffff;
+    font-size:10px;
+    font-weight:900;
+    font-style:normal;
+    font-family:"Tahoma";
+
+    border: 2px outset;
+    border-radius: 15px;
+    padding: 1px 10px 5px 10px;
+
+    width: 50px;
+}
+
+a.linkbutton:hover {
+    background-color: #557fbe;
+    border-color: #addbe6;
+}
+
+a.linkbutton:active {
+    background-color: #CD5C5C;
+    border-color: #aaaaaa;
+    border: 2px inset;
+}
+/* ----------------------------------------------------------------------
+Link Buttons  - End
+-----------------------------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------------------------------------------------
+Tables  - Start
+-----------------------------------------------------------------------*/
+.trtbl{
+    width: 100%;
+}
+.td_error{
+    color: #CD5C5C;
+}
+/* ----------------------------------------------------------------------
+Tables  - End
+-----------------------------------------------------------------------*/
+
+
+#dt{
+    margin: auto;
+    width: 100%;
+    font-size: 15px;
+}
+#dt thead{
+    background-color: lightblue;
+    cursor: pointer;
+}
+#dt tfoot{
+    background-color: lightblue;
+}
+
+
+.tab_main{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* ----------------------------------------------------------------------
+Inputs  - Start
+-----------------------------------------------------------------------*/
+input[type=number]{
+    text-align: right;
+}
+/* ----------------------------------------------------------------------
+Inputs  - End
+-----------------------------------------------------------------------*/

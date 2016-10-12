@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Item" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8ed444c0-a550-4f8d-8ee7-bf90a57afec1">
+	<property name="ireport.zoom" value="0.9090909090909093"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="item" class="java.lang.String"/>
+	<field name="module" class="java.lang.String"/>
+	<field name="date" class="java.lang.String"/>
+	<field name="balance" class="java.lang.String"/>
+	<field name="runbal" class="java.lang.String"/>
+	<field name="doc_no" class="java.lang.String"/>
+	<field name="location" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="350819f5-033b-43ad-9ff4-32ac2768526b" x="280" y="14" width="236" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item Running Balance]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3eb9b53c-53ce-49c1-bc80-d745dd47b56b" x="4" y="1" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Item]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c660b32f-bb60-42bb-b509-9251792cf436" x="110" y="1" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Module]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f578a7e7-6648-49f7-922c-a0515edc74d3" x="445" y="1" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="270a8df6-6e87-42b6-88a6-2aa908d236e3" x="596" y="1" width="100" height="20"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Balance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8f7d7be6-8ceb-42bb-b711-a7bbd002a2f8" x="701" y="1" width="100" height="20"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Running Balance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="06016de9-48da-477b-9d67-c71f57dc6d09" x="214" y="1" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Doc No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5f1e0db4-b32a-4758-bd75-bb6e038169fb" x="329" y="1" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Location]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement uuid="a46ef059-071b-465d-b0a0-5d0d78252ffb" x="4" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{item}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="295898ed-377f-48ac-839e-8ecdd7fe4e61" x="110" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{module}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="04951b1f-1abb-43fe-95b1-10a694bb8d5b" x="445" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="532dd31b-ef72-419c-8e5e-74b301beef5e" x="596" y="0" width="100" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{balance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1c562599-afcb-4c91-8e08-ffbd47626d0e" x="701" y="0" width="100" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{runbal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="49b6283b-b518-46c5-bd38-355de53c60ed" x="214" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{doc_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fa244da6-13da-4589-81ad-d1815dee1e12" x="329" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{location}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="26" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="35" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
